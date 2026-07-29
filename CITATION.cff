@@ -1,0 +1,52 @@
+cff-version: 1.2.0
+message: >-
+  If you use this software, cite this software and the SuSiE method papers
+  listed in README.md.
+title: susie-numpy
+type: software
+authors:
+  - given-names: Chengzhong
+    family-names: Ye
+version: 0.1.0
+date-released: 2026-07-29
+license: MIT
+repository-code: https://github.com/cz-ye/susie-numpy
+url: https://github.com/cz-ye/susie-numpy
+keywords:
+  - Bayesian regression
+  - fine-mapping
+  - GWAS
+  - summary statistics
+  - SuSiE
+references:
+  - type: article
+    title: >-
+      A simple new approach to variable selection in regression, with
+      application to genetic fine mapping
+    authors:
+      - given-names: Gao
+        family-names: Wang
+      - given-names: Abhishek
+        family-names: Sarkar
+      - given-names: Peter
+        family-names: Carbonetto
+      - given-names: Matthew
+        family-names: Stephens
+    journal: "Journal of the Royal Statistical Society: Series B"
+    year: 2020
+    doi: 10.1111/rssb.12388
+  - type: article
+    title: >-
+      Fine-mapping from summary data with the "Sum of Single Effects" model
+    authors:
+      - given-names: Yuxin
+        family-names: Zou
+      - given-names: Peter
+        family-names: Carbonetto
+      - given-names: Gao
+        family-names: Wang
+      - given-names: Matthew
+        family-names: Stephens
+    journal: PLOS Genetics
+    year: 2022
+    doi: 10.1371/journal.pgen.1010299

@@ -1,0 +1,67 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "susie-numpy"
+version = "0.1.0"
+description = "Memory-efficient NumPy SuSiE for dense summary-statistic fine-mapping"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE", "LICENSES/*.txt", "NOTICE.md"]
+authors = [
+  {name = "Chengzhong Ye"},
+]
+keywords = [
+  "bayesian regression",
+  "fine-mapping",
+  "genetics",
+  "GWAS",
+  "summary statistics",
+  "SuSiE",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+dependencies = [
+  "numpy>=1.23",
+  "scipy>=1.9",
+]
+
+[project.optional-dependencies]
+test = [
+  "pytest>=8",
+]
+dev = [
+  "build>=1.2",
+  "pytest>=8",
+  "ruff>=0.9",
+]
+
+[project.urls]
+Homepage = "https://github.com/cz-ye/susie-numpy"
+Repository = "https://github.com/cz-ye/susie-numpy"
+Issues = "https://github.com/cz-ye/susie-numpy/issues"
+"Original PolyFun implementation" = "https://github.com/omerwe/polyfun"
+"Upstream susieR" = "https://github.com/stephenslab/susieR"
+
+[tool.pytest.ini_options]
+addopts = "--strict-config --strict-markers"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["B", "E", "F", "I", "UP"]
